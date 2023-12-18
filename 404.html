@@ -36,14 +36,25 @@
             </div>
         </section>
     </main>
-</body>
-<script>
-    // Fetch and include the header dynamically using JavaScript
-    fetch('header.html')
-        .then(response => response.text())
-        .then(headerHtml => {
-            document.body.innerHTML = headerHtml + document.body.innerHTML;
-        });
-</script>
-<script src="./assets/js/main.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- ICONS -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Fetch and include the header dynamically using JavaScript
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(headerHtml => {
+                        const headerContainer = document.createElement('div');
+                        headerContainer.innerHTML = headerHtml;
+                        document.body.prepend(headerContainer);
+
+                        // Now, you can run your main.js script
+                        const mainScript = document.createElement('script');
+                        mainScript.src = './assets/js/main.js';
+                        document.body.appendChild(mainScript);
+                    });
+            });
+        </script>
 </body>
