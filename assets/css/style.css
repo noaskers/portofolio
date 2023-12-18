@@ -1,6 +1,5 @@
 /*====== GOOGLE FONTS ======*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -72,7 +71,6 @@ ul {
     font-size: 20px;
     margin-left: 10px;
 }
-
 .section_title {
     text-align: center;
     font-size: 36px;
@@ -110,7 +108,6 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
 }
-
 /* =================== HEADER  ==============*/
 header {
     position: fixed;
@@ -118,7 +115,6 @@ header {
     padding: 20px 0;
     z-index: 1000;
 }
-
 header.active {
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
@@ -194,7 +190,6 @@ header .container {
     cursor: pointer;
     margin-right: 10px;
 }
-
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 30px;
@@ -261,12 +256,10 @@ header .container {
     display: inline-flex;
     align-items: center;
 }
-
 .hero_social {
     display: flex;
     column-gap: 20px;
 }
-
 .hero_social a {
     font-size: 22px;
     display: inline-flex;
@@ -313,8 +306,6 @@ header .container {
     }
     .hero_img {
         justify-content: center;
-    }
-    
+    }  
 }
-
 /* Hero type effect */
