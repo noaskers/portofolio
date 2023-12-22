@@ -22,6 +22,20 @@
         body {
             height: auto !important;
         }
+
+        .hero_content h1 {
+            font-size: 50px;
+        }
+
+        .hero_container {
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+            justify-content: center;
+        }
+
+        .hero_content {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -33,28 +47,29 @@
                     <h4>404</h4>
                     <h1>PAGE NOT FOUND
                     </h1>
-            </div>
+                </div>
         </section>
     </main>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <!-- ICONS -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Fetch and include the header dynamically using JavaScript
-                fetch('header.html')
-                    .then(response => response.text())
-                    .then(headerHtml => {
-                        const headerContainer = document.createElement('div');
-                        headerContainer.innerHTML = headerHtml;
-                        document.body.prepend(headerContainer);
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch and include the header dynamically using JavaScript
+            fetch('header.html')
+                .then(response => response.text())
+                .then(headerHtml => {
+                    const headerContainer = document.createElement('div');
+                    headerContainer.innerHTML = headerHtml;
+                    document.body.prepend(headerContainer);
 
-                        // Now, you can run your main.js script
-                        const mainScript = document.createElement('script');
-                        mainScript.src = './assets/js/main.js';
-                        document.body.appendChild(mainScript);
-                    });
-            });
-        </script>
+                    // Now, you can run your main.js script
+                    const mainScript = document.createElement('script');
+                    mainScript.src = './assets/js/main.js';
+                    document.body.appendChild(mainScript);
+                });
+        });
+    </script>
 </body>
+</html>
