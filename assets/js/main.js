@@ -19,7 +19,6 @@ menuLinks.forEach((menuLink) => {
 });
 
 // Change background header
-
 function scrollHeader() {
   const header = document.getElementById("header");
   this.scrollY >= 20
@@ -27,7 +26,7 @@ function scrollHeader() {
     : header.classList.remove("active");
 }
 
-window.addEventListener("scroll", scrollHeader); 
+window.addEventListener("scroll", scrollHeader);
 
 // Hero type effect
 const typed = document.querySelector(".typed");
@@ -43,3 +42,35 @@ if (typed) {
     backDelay: 2000
   })
 }
+
+// Add scroll-based menu highlighting
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section[id]");
+  const menuLinks = document.querySelectorAll(".menu_link");
+  const headerHeight = document.getElementById("header").offsetHeight;
+
+  function highlightMenuItem() {
+      let scrollPosition = window.scrollY + headerHeight;
+
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (
+              scrollPosition >= sectionTop - 50 &&
+              scrollPosition < sectionTop + sectionHeight - 50
+          ) {
+              let targetId = section.getAttribute("id");
+              menuLinks.forEach(link => {
+                  if (link.getAttribute("href") === `/#${targetId}`) {
+                      link.classList.add("active-link");
+                  } else {
+                      link.classList.remove("active-link");
+                  }
+              });
+          }
+      });
+  }
+
+  window.addEventListener("scroll", highlightMenuItem);
+});
+

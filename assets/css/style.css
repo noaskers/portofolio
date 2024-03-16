@@ -7,9 +7,12 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    background-color: #131312;
+
 }
 ::selection {
-    color: #fff;
+    color: #fff	;
     background-color: var(--main-color);
 }
 ::-webkit-scrollbar {
@@ -23,10 +26,10 @@ html {
     border-radius: 10px;
 }
 :root {
-    --main-color: rgb(223, 94, 255);
+    --main-color:#1ED760;
     --seconde-color: rgb(247, 215, 255);
-    --title-color: #222;
-    --subtitle-color: #8d8d8d;
+    --title-color: #ffffff;
+    --subtitle-color: #ffffff;
 
 }
 body {
@@ -77,7 +80,7 @@ ul {
     font-weight: 600;
     text-transform: capitalize;
     line-height: .8;
-    color: #222;
+    color: var(--title-color);
     position: relative;
     margin-bottom: 100px;
     padding-bottom: 20px;
@@ -116,7 +119,7 @@ header {
     z-index: 1000;
 }
 header.active {
-    background-color: #fff;
+    background-color: #1d1d1d;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
 }
 header .container {
@@ -136,6 +139,8 @@ header .container {
     height: auto;
     display: flex;
     align-items: center;
+    text-decoration: none !important;
+    color: var(--title-color);
 }
 .menu {
     white-space: nowrap;
@@ -248,7 +253,7 @@ header .container {
 }
 .hero_container p {
     margin: 10px 0 40px;
-    color: #333;
+    color: var(--subtitle-color);
     font-size: 18px;
 }
 .hero_container .btn {
@@ -309,3 +314,8 @@ header .container {
     }  
 }
 /* Hero type effect */
+
+
+
+
+/* HEADER FIX */
