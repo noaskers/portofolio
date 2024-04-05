@@ -8,7 +8,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
-    background-color: #131312;
+    background-color: var(--bg-color);
 
 }
 ::selection {
@@ -25,10 +25,13 @@ html {
     background-color: var(--main-color);
 }
 :root {
-    --main-color:#1ED760;;
+    --main-color:#1ED760;
     --seconde-color: rgb(255, 255, 255);
     --title-color: #ffffff;
     --subtitle-color: #ffffff;
+
+    --bg-color: #131312;
+    --header-color: #272727;
 
 }
 body {
@@ -118,7 +121,7 @@ header {
     z-index: 1000;
 }
 header.active {
-    background-color: #272727;
+    background-color: var(--header-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
 }
 header .container {
@@ -141,6 +144,22 @@ header .container {
     text-decoration: none !important;
     color: var(--title-color);
 }
+
+.switch {
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+.dark_mode {
+    color: #222;
+}
+.light_mode {
+    color: #fff;
+}
+
+.active_switch {
+    display: none;
+}
 .menu {
     white-space: nowrap;
     transition: .5s;
@@ -154,7 +173,7 @@ header .container {
     padding: 5px 10px;
     position: relative;
     transition: .4s;
-    color: #333;
+    color: var(--title-color);
     font-weight: 500;
 }
 .menu_link::before {
@@ -192,6 +211,7 @@ header .container {
     font-size: 32px;
     display: none;
     cursor: pointer;
+    color: var(--main-color);
     margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -202,7 +222,7 @@ header .container {
         position: absolute;
         right: 0;
         top: 0;
-        background-color: #eee;
+        background-color: #4e4e4e;
         height: 100vh;
         padding-top: 100px;
         width: 300px;
@@ -218,7 +238,7 @@ header .container {
         margin: 20px 0;
     }
     .menu_link {
-        color: #333;
+        color: #fff;
     }
     .toggle_icon {
         display: block;

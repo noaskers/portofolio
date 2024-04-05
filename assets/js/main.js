@@ -2,6 +2,8 @@ const iconToggle = document.querySelector(".toggle_icon");
 const navbarMenu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll(".menu_link");
 const iconClose = document.querySelector(".close_icon");
+const darkMode = document.querySelector(".dark_mode");
+const lightMode = document.querySelector(".light_mode");
 
 iconToggle.addEventListener("click", () => {
   navbarMenu.classList.toggle("active");
@@ -10,6 +12,31 @@ iconToggle.addEventListener("click", () => {
 
 iconClose.addEventListener("click", () => {
   navbarMenu.classList.remove("active");
+});
+
+darkMode.addEventListener("click", () => {
+  darkMode.classList.toggle("active_switch");
+  lightMode.classList.toggle("active_switch");
+  console.log("clicked");
+
+  document.documentElement.style.setProperty('--bg-color', '#131312');
+  document.documentElement.style.setProperty('--header-color', '#272727');
+  document.documentElement.style.setProperty('--title-color', '#ffffff');
+  document.documentElement.style.setProperty('--subtitle-color', '#ffffff');
+});
+
+lightMode.addEventListener("click", () => {
+  lightMode.classList.toggle("active_switch");
+  darkMode.classList.toggle("active_switch");
+
+
+  // Switch theme
+  document.documentElement.style.setProperty('--bg-color', 'unset');
+  document.documentElement.style.setProperty('--header-color', 'unset');
+  document.documentElement.style.setProperty('--title-color', '#222');
+  document.documentElement.style.setProperty('--subtitle-color', '#8d8d8d');
+
+  console.log("clicked");
 });
 
 menuLinks.forEach((menuLink) => {
