@@ -1,0 +1,201 @@
+<style>
+  @font-face {
+    font-family: Whitney;
+    src: url('https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: Whitney;
+    src: url('https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: Whitney;
+    src: url('https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: Whitney;
+    src: url('https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: Whitney;
+    src: url('https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff');
+    font-weight: 700;
+  }
+  body {
+    background-color: #36393e;
+    color: #dcddde;
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  
+  .parent-container {
+    padding: 25px;
+    display: flex;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .guild-image {
+    border-radius: 35%;
+    padding: 15px;
+  }
+  
+  
+  .embed {
+    display: flex;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 0 7px 7px 0;
+    position: relative;
+    margin-left: 5px;
+    max-width: 600px;
+  }
+  
+  .codeblock {
+    border: 2px solid rgb(32, 34, 37);
+    background: rgb(47, 49, 54);
+    border-radius: 3px;
+    padding: 5px 0 5px 10px;
+    max-width: 80%;
+    font-family: 'Consolas';
+  }
+  
+  .embed-color {
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+    border-radius: 7px 0 0 7px
+  }
+  
+  .embed-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .embed-title {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .embed-description {
+    margin-top: 15px;
+  }
+  
+  .chat-image {
+    display: block;
+    position: relative;
+    border-radius: 3px;
+    margin-top: 0.2em;
+    overflow: hidden;
+  }
+  
+  .chat-media {
+    max-width: 45vw;
+    max-height: 500px;
+    border-radius: 3px;
+    display: block;
+  }
+  
+  .embed-footer {
+    color: #dcddde;
+    padding-top: 6px;
+  }
+  
+  .embed-footer-icon {
+    margin-right: 0.4em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline;
+  }
+  
+  .embed-footer-text {
+    vertical-align: middle;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+  }
+  
+  .embed-thumbnail {
+    flex: 0;
+    margin-left: 16px;
+    margin-top: 8px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+  }
+  
+  .embed-image-container {
+    margin-top: 16px;
+  }
+  
+  .embed-image {
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 4px;
+  }
+
+  .collapse-panel {
+    padding: 0 18px;
+    padding-bottom: 20px;
+    background-color: #41444A;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .collapse-button {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 250px;
+  }
+
+  .collapse-button:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+<script>
+  function toggleAnswers() {
+    const toggleAnswers = document.querySelector(".collapse-button")
+    const answersPanel = document.querySelector(".collapse-panel");
+    if (answersPanel.style.display === "block") {
+      answersPanel.style.display = "none";
+    } else {
+      answersPanel.style.display = "block";
+    }
+  }
+</script><div style="display: flex;" transcript-user-id="718176613434523749" transcript-user-username="<@718176613434523749>"><img src="https://cdn.discordapp.com/icons/1026500009287491654/534d8a9358c622dddea4526bab24ceac.webp" width="128" class="guild-image"><span style="margin-top: 45px;">AstroSMP ⭐<span style="display: flex; padding-top: 15px; font-size: 15px;">Creation Date: 19/12/2024, 15:40:58</span><span style="display: flex; padding-top: 5px; font-size: 15px;">Closing Date: 19/12/2024, 16:13:03</span></span></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/1158507535163203585/9ac6760f898a0b31ee1790c3e4f6792f.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">AstroSmp <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 15:40:59</span></span><span></span><div class="embed"><div class="embed-color" style="background-color: rgb(254, 231, 92);"></div><div class="embed-content"><span class="embed-title">Ticket aangemaakt</span><span class="embed-description">Bedankt voor het aanmaken van een ticket. Wij helpen je snel verder.<br><br>Formuleer je probleem in deze chat zodat we je sneller kunnen helpen zodra er een stafflid online komt. <br><br><b>Category:</b><br>&gt; `Aankopen`</span></div></div></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 15:41:29</span></span><span>Hallo!<br><br>ik vroeg me af ofdat ranks blijven als het seizoen stopt en er een nieuw seizoen begint. Ik kon dit namelijk niet direct vinden in de store</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/299250688867958784/8c00db7afcf8e86f578bc9e87d1020b4.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">oplader <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 15:53:22</span></span><span>Ranks zijn permanent en gaan mee bij volgende seizoenen inderdaad.</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 15:56:14</span></span><span>yesss</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 15:56:22</span></span><span>dan ga ik hem toch mogen kopen 😄</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 15:58:06</span></span><span>Hey, hier de vader van Peter, <br><br>zou het mogelijk zijn om deze conversatie ergens opgeslagen te krijgen met een linkje? ik wil namelijk 100% zeker zijn dat de rank permanent is. <br><br>we hebben het namelijk niet zo breed waardoor we moeten opletten met onze uitgaven.</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/299250688867958784/8c00db7afcf8e86f578bc9e87d1020b4.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">oplader <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:04:27</span></span><span>Hoi Peter, om welke rank gaat het precies?</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/299250688867958784/8c00db7afcf8e86f578bc9e87d1020b4.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">oplader <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:06:00</span></span><span>Het is mogelijk om jullie een zo gehete "transcript" te sturen van dit ticket. Die ontvangen jullie per DM, en blijft altijd beschikbaar!</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:08:18</span></span><span>Dat zou perfect zijn! We zijn aan het kijken of we de lunar rank kunnen kopen, anders wordt het de cosmic rank, hangt voorlopig af van enkele noodzakelijke uitgaven die we hebben. <br><br>In ieder geval heel erg bedankt voor de mogelijkheid tot de transcript.<br><br>Zou u het ticket kunnen sluiten zodat mijn zoon niet ziet dat het een cadeau is.<br><br>Nogmaals heel erg bedankt!</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/299250688867958784/8c00db7afcf8e86f578bc9e87d1020b4.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">oplader <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:10:11</span></span><span>Je kunt de code: `Peter` eenmalig gebruiken voor 50% korting op een aankoop (je gehele winkelmandje). Zo helpen we elkaar tijdens de feestdagen! Normaal doen we dit niet, maar voor deze keer vind ik een uitzondering goed.</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/299250688867958784/8c00db7afcf8e86f578bc9e87d1020b4.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">oplader <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:10:20</span></span><span>Sla hem even op!</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:10:56</span></span><span>Wow! dankjulliewel! Ik weet even niet wat te zeggen..</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/299250688867958784/8c00db7afcf8e86f578bc9e87d1020b4.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">oplader <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:11:25</span></span><span>Geen dank, we doen graag wat goeds! 🙂</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/1068179092396048495/9b9c1e6348f090f6111f0b65b389397c.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">noaskers <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:12:20</span></span><span>Zo ver ik weet horen jullie automatisch een transcript te krijgen in je DM zodra ik dit ticket sluit zo niet maak even een nieuwe aan dan verstuur ik hem daar!</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/5.png" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">peterdesmedt. <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:12:52</span></span><span>Oke, nogmaals heel erg bedankt!</span></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/1158507535163203585/9ac6760f898a0b31ee1790c3e4f6792f.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">AstroSmp <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:12:59</span></span><span></span><div class="embed"><div class="embed-color" style="background-color: rgb(87, 242, 135);"></div><div class="embed-content"><span class="embed-title">Astro Core</span><span class="embed-description">Weet je zeker dat je het ticket wilt sluiten? Klik op de knop om je beslissing te bevestigen.</span><div class="embed-footer"><img class="embed-footer-icon" src="https://images-ext-1.discordapp.net/external/Mvwjkr1lQbqQno22pvXvYe80pllnxk9h6HMMyNG0isk/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1158507535163203585/9ac6760f898a0b31ee1790c3e4f6792f.webp" alt="Footer icon"><span class="embed-footer-text">Astro Tickets • 12/19/2024, 4:12:59 PM</span></div></div></div></div></div><div class="parent-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/avatars/1158507535163203585/9ac6760f898a0b31ee1790c3e4f6792f.webp" class="avatar"></div><div class="message-container"><span style="padding-bottom: 10px;">AstroSmp <span style="font-size: 12px; color: rgb(196, 196, 196);">19/12/2024, 16:13:02</span></span><span></span><div class="embed"><div class="embed-color" style="background-color: rgb(254, 231, 92);"></div><div class="embed-content"><span class="embed-title">Astro Core</span><span class="embed-description">Het ticket wordt over enkele seconden verwijderd.</span><div class="embed-footer"><img class="embed-footer-icon" src="https://images-ext-1.discordapp.net/external/Mvwjkr1lQbqQno22pvXvYe80pllnxk9h6HMMyNG0isk/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1158507535163203585/9ac6760f898a0b31ee1790c3e4f6792f.webp" alt="Footer icon"><span class="embed-footer-text">Astro Tickets • 12/19/2024, 4:13:02 PM</span></div></div></div></div></div>
